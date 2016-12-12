@@ -1,0 +1,56 @@
+body {
+    padding: 50px 0 40px 0;
+    color: #5a5a5a;
+}
+
+/*轮播图*/
+.carousel {
+    height: 450px;
+
+}
+.carousel .item {
+    height: 450px;
+    width: 100%;
+    background-color: #000;
+}
+.carousel .img {
+    width: 100%;
+}
+
+/*简述三栏布局*/
+#main-container {padding-top: 50px;}
+
+/*详情页*/
+.details-head {}
+
+/* 响应式布局 */
+
+@media (max-width: 1280px) {
+    .carousel {
+        height: 350px;
+    }
+
+    .carousel .item {
+        height: 350px;
+    }
+
+    .carousel img {
+        min-height: 350px;
+    }
+
+}
+
+/*大于992px*/
+@media (min-width: 992px) {
+    .details-head {
+        margin-top: 120px;
+    }
+
+    .details-txt {
+        font-size: 22px;
+    }
+
+    .details-load {
+        padding-top: 25px;
+    }
+}

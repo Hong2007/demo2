@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>腾讯软件之家</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/base.css">
+</head>
+<body>
+    <!--顶部导航条-->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="menu-navbar">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#click-tab">
+                    <span class="sr-only">切换导航</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">腾讯软件之家</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="click-tab">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#ad-carousel">综述</a></li>
+                    <li><a href="#main-container">简述</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">详情<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#qq" data-tab="qq">腾讯QQ</a></li>
+                            <li><a href="#qqmusic" data-tab="qqmusic">QQ音乐</a></li>
+                            <li><a href="#qqbrowser" data-tab="qqbrowser">QQ浏览器</a></li>
+                            <li><a href="#qqguanjia" data-tab="qqguanjia">腾讯电脑管家</a></li>
+                            <li><a href="#qqpinyin" data-tab="qqpinyin">QQ拼音输入法</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" data-toggle="modal" data-target="#about">关于</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--轮播图-->
+    <div id="ad-carousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#ad-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#ad-carousel" data-slide-to="1"></li>
+            <li data-target="#ad-carousel" data-slide-to="2"></li>
+            <li data-target="#ad-carousel" data-slide-to="3"></li>
+            <li data-target="#ad-carousel" data-slide-to="4"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="imags/QQ_bg.png" alt="QQ">
+            </div>
+            <div class="item">
+                <img src="imags/QQmusic_bg.png" alt="QQ音乐">
+            </div>
+            <div class="item">
+                <img src="imags/QQbrowser_bg.png" alt="QQ浏览器">
+            </div>
+            <div class="item">
+                <img src="imags/QQguanjia_bg.png" alt="QQ安全管家">
+            </div>
+            <div class="item">
+                <img src="imags/QQpinyin_bg.png" alt="QQ拼音">
+            </div>
+        </div>
+        <a class="left carousel-control" href="#ad-carousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#ad-carousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+    </div>
+
+    <div class="container" id="main-container">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="imags/QQ_small.png" alt="qq">
+                <h2>腾讯QQ</h2>
+                <p>腾讯QQ（简称“QQ”）是腾讯公司开发的一款基于Internet的即时通信（IM）软件。</p>
+                <p><a class="btn btn-default" href="#" role="button">点我下载</a></p>
+            </div>
+            <div class="col-md-4">
+                <img src="imags/QQmusic_small.png" alt="qq音乐">
+                <h2>QQ音乐</h2>
+                <p>QQ音乐是腾讯公司推出的网络音乐平台。</p>
+                <p><a class="btn btn-default" href="#" role="button">点我下载</a></p>
+            </div>
+            <div class="col-md-4">
+                <img src="imags/QQguanjia_small.png" alt="qq安全管家">
+                <h2>腾讯电脑管家</h2>
+                <p>腾讯电脑管家是腾讯公司推出的免费安全软件。</p>
+                <p><a class="btn btn-default" href="#" role="button">点我下载</a></p>
+            </div>
+        </div>
+
+        <hr class="divider">
+
+        <!--详情页-->
+        <ul class="nav nav-tabs" role="tablist" id="tab-list">
+            <li role="presentation" class="active"><a href="#qq" data-toggle="tab">腾讯QQ</a></li>
+            <li role="presentation"><a href="#qqmusic" data-toggle="tab">QQ音乐</a></li>
+            <li role="presentation"><a href="#qqbrowser" data-toggle="tab">QQ浏览器</a></li>
+            <li role="presentation"><a href="#qqguanjia" data-toggle="tab">腾讯电脑管家</a></li>
+            <li role="presentation"><a href="#qqpinyin" data-toggle="tab">QQ拼音输入法</a></li>
+        </ul>
+
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="qq">
+                <div class="row details">
+                    <div class="col-md-7">
+                        <h2 class="details-head">腾讯QQ</h2>
+                        <p class="details-txt">腾讯QQ（简称“QQ”）是腾讯公司开发的一款基于Internet的即时通信（IM）软件。腾讯QQ支持在线聊天、视频通话、点对点断点续传文件、共享文件、网络硬盘、自定义面板、QQ邮箱等多种功能，并可与多种通讯终端相连。目前QQ已经覆盖Microsoft Windows、OS X、Android、iOS、Windows Phone等多种主流平台。</p>
+                        <p class="details-load"><a class="btn btn-default" href="#" role="button">点我下载</a></p>
+                    </div>
+                    <div class="col-md-5"><img src="imags/QQ_big.png" alt="qq"></div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="qqmusic">
+                <div class="row details">
+                    <div class="col-md-5"><img src="imags/QQmusic_big.png" alt="qq音乐"></div>
+                    <div class="col-md-7">
+                        <h2 class="details-head">QQ音乐</h2>
+                        <p class="details-txt">QQ音乐是腾讯公司推出的网络音乐平台，是中国互联网领域领先的正版数字音乐服务的领先平台，同时也是一款免费的音乐播放器，始终走在音乐潮流最前端，向广大用户提供方便流畅的在线音乐和丰富多彩的音乐社区服务。只要您拥有QQ音乐播放器，就拥有属于您自己的流行音乐!</p>
+                        <p class="details-load"><a class="btn btn-default" href="#" role="button">点我下载</a></p>
+                    </div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="qqbrowser">
+                <div class="row details">
+                    <div class="col-md-7">
+                        <h2 class="details-head">QQ浏览器</h2>
+                        <p class="details-txt">腾讯官方出品，基于chromium内核开发，可以安装Chrome的扩展，还有微信等众多优质扩展。支持QQ快捷登录，登录浏览器后即可自动登录腾讯系网页。QQ浏览器是腾讯研发的网页浏览器，采用双核引擎设计，满足用户在不同网页环境下的使用需求。</p>
+                        <p class="details-load"><a class="btn btn-default" href="#" role="button">点我下载</a></p>
+                    </div>
+                    <div class="col-md-5"><img src="imags/QQbrowser_big.png" alt="qq浏览器"></div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="qqguanjia">
+                <div class="row details">
+                    <div class="col-md-5"><img src="imags/QQguanjia_big.png" alt="腾讯安全管家"></div>
+                    <div class="col-md-7">
+                        <h2 class="details-head">腾讯电脑管家</h2>
+                        <p class="details-txt">腾讯电脑管家是腾讯公司推出的免费安全软件。拥有云查杀木马，系统加速，漏洞修复，实时防护，网速保护，电脑诊所，健康小助手等功能，首创“管理+杀毒”2合1的开创性功能依托管家云查杀引擎和第二代自研反病毒引擎“鹰眼”，小红伞(antivir) 杀毒引擎和管家系统修复引擎，拥有QQ账号全景防卫系统，针对网络钓鱼欺诈及盗号打击方面，在安全防护及病毒查杀方面的能力已达到国际一流杀软水平。</p>
+                        <p class="details-load"><a class="btn btn-default" href="#" role="button">点我下载</a></p>
+                    </div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="qqpinyin">
+                <div class="row details">
+                    <div class="col-md-7">
+                        <h2 class="details-head">QQ拼音输入法</h2>
+                        <p class="details-txt">QQ拼音输入法（简称QQ拼音、QQ输入法），是2007年11月20日由腾讯公司开发的一款汉语拼音输入法软件，运行于Windows、Mac等系统下。QQ拼音输入法与搜狗拼音、谷歌拼音、智能ABC等同为主流的输入法。2013年09月16日，腾讯4.48亿美元注资搜狗，宣布将搜搜和QQ输入法业务与搜狗现有业务进行合并。</p>
+                        <p class="details-load"><a class="btn btn-default" href="#" role="button">点我下载</a></p>
+                    </div>
+                    <div class="col-md-5"><img src="imags/QQpinyin_big.png" alt="qq拼音"></div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="divider">
+
+        <footer>
+            <p class="pull-right"><a href="#top">回到顶部</a></p>
+            <p>&copy;2016.10 Hong</p>
+        </footer>
+
+    </div>
+
+    <!--“关于”弹出框-->
+    <div class="modal fade" id="about">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title">关于</h4>
+                </div>
+                <div class="modal-body">
+                    <h3>bootstrap框架项目（腾讯软件之家）demo</h3>
+                    <p>如果您有一些建议请联系 952702007@qq.com</p>
+                    <p>2016.10 Hong</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+           $('#click-tab .dropdown-menu a').click(function(){
+               var href=$(this).attr('href');
+
+               $('#tab-list a[href="'+ href +'"]').tab('show');
+           }) ;
+        });
+    </script>
+</body>
+</html>
